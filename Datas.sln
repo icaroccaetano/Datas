@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datas", "Datas\Datas.csproj", "{264E1B92-424F-48B6-B8A7-4A70FA93C5D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datas.Dominio", "Datas.Dominio\Datas.Dominio.csproj", "{54141232-9452-4276-9B5F-1DA104144A3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{264E1B92-424F-48B6-B8A7-4A70FA93C5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264E1B92-424F-48B6-B8A7-4A70FA93C5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264E1B92-424F-48B6-B8A7-4A70FA93C5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264E1B92-424F-48B6-B8A7-4A70FA93C5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54141232-9452-4276-9B5F-1DA104144A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54141232-9452-4276-9B5F-1DA104144A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54141232-9452-4276-9B5F-1DA104144A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54141232-9452-4276-9B5F-1DA104144A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92BBF4A0-1968-4CC4-BCDB-ED29606A4D69}
+	EndGlobalSection
+EndGlobal
