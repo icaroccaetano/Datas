@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datas", "Datas\Datas.csproj", "{264E1B92-424F-48B6-B8A7-4A70FA93C5D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datas", "Datas\Datas.csproj", "{264E1B92-424F-48B6-B8A7-4A70FA93C5D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datas.Dominio", "Datas.Dominio\Datas.Dominio.csproj", "{54141232-9452-4276-9B5F-1DA104144A3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datas.Dominio", "Datas.Dominio\Datas.Dominio.csproj", "{54141232-9452-4276-9B5F-1DA104144A3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Testes", "Data.Testes\Data.Testes.csproj", "{449AE946-F9BA-4EEA-9D5B-B06EBA643017}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{54141232-9452-4276-9B5F-1DA104144A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54141232-9452-4276-9B5F-1DA104144A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54141232-9452-4276-9B5F-1DA104144A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449AE946-F9BA-4EEA-9D5B-B06EBA643017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449AE946-F9BA-4EEA-9D5B-B06EBA643017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449AE946-F9BA-4EEA-9D5B-B06EBA643017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449AE946-F9BA-4EEA-9D5B-B06EBA643017}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
