@@ -9,11 +9,7 @@ namespace Program
         {
             DataConfiguracao data = new();
 
-            data.ConfigurarFormato();
-            data.EscolherDataTecnologia();
-            data.ImprimirDataFinal();
-
-
+            data.AbrirMenuInterativo();
         }
     }
 }

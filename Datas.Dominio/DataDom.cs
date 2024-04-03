@@ -1,4 +1,6 @@
-﻿namespace Datas.Dominio
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Datas.Dominio
 {
     public class DataConfiguracao
     {
@@ -7,7 +9,16 @@
          * FormatosData => 1) Padrao Sistema; 2) Simples; 3) Longo; 4) Longo Personalizado; 5) RFC1123 pattern
          * DataTecnologia => 1) ENIAC; 2) RFC1; 3) Alan Turing 
         */
-        private List<DateTime> ListaDatasTecnologia()
+        
+        public void AbrirMenuInterativo ()
+        {
+            Console.WriteLine("Bem vindo(a) ao formatador de data! Feito para testar DateTime e formatacoes possiveis.");
+            ConfigurarFormato();
+            EscolherDataTecnologia();
+            ImprimirDataFinal();
+        }
+        
+        static private List<DateTime> ListaDatasTecnologia()
         {
             List<DateTime> list = new List<DateTime>()
            {
@@ -23,7 +34,7 @@
         {
 
             DateTime dataAgora = DateTime.Now;
-            Boolean aux = true;
+            bool aux = true;
 
             while (aux)
             {
@@ -51,7 +62,7 @@
 
         public void EscolherDataTecnologia()
         {
-            Boolean aux = true;
+            bool aux = true;
 
             while (aux)
             {
