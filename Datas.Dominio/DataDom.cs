@@ -90,6 +90,25 @@ namespace Datas.Dominio
         {
             List<DateTime> datas = ListaDatasTecnologia();
 
+            // Formtação da Data
+            /*switch (formatoData)
+            {
+                case 1:
+                    datas[1] = datas[1].ToString();
+                    datas[1] = datas[1].ToString();
+                    datas[1] = datas[1].ToString();
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                default:
+                    break;
+            }*/
             // Definicao da Data
             switch (dataTecnologia)
             {
@@ -97,19 +116,19 @@ namespace Datas.Dominio
                     switch (formatoData)
                     {
                         case 1: // Padrao Sistema
-                            Console.WriteLine($"(ENIAC) - {datas[1].ToString()} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
+                            Console.WriteLine($"(ENIAC) - {datas[0].ToString()} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
                             break;
                         case 2: // Simples
-                            Console.WriteLine($"(ENIAC) - {string.Format("{0:dd-MM-yy}", datas[1])} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
+                            Console.WriteLine($"(ENIAC) - {string.Format("{0:dd-MM-yy}", datas[0])} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
                             break;
                         case 3: // Longo 
-                            Console.WriteLine($"(ENIAC) - {datas[1].ToLongDateString()} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
+                            Console.WriteLine($"(ENIAC) - {datas[0].ToLongDateString()} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
                             break;
                         case 4: // Longo Personalizado
-                            Console.WriteLine($"(ENIAC) - {string.Format("{0:dd-MM-yyyy hh:mm:ss}", datas[1])} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
+                            Console.WriteLine($"(ENIAC) - {string.Format("{0:dd-MM-yyyy hh:mm:ss}", datas[0])} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
                             break;
                         case 5: // Padrao RFC1123
-                            Console.WriteLine($"(ENIAC) - {string.Format("{0:r}", datas[1])} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
+                            Console.WriteLine($"(ENIAC) - {string.Format("{0:r}", datas[0])} No dia 15 de agosto de 1946 os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo.");
                             break;
                         default:
                             break;
@@ -119,19 +138,19 @@ namespace Datas.Dominio
                     switch (formatoData)
                     {
                         case 1: // Padrao Sistema
-                            Console.WriteLine($"(RFC1) - {datas[2].ToString()} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
+                            Console.WriteLine($"(RFC1) - {datas[1].ToString()} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
                             break;
                         case 2: // Simples
-                            Console.WriteLine($"(RFC1) - {string.Format("{0:dd-MM-yy}", datas[2])} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
+                            Console.WriteLine($"(RFC1) - {string.Format("{0:dd-MM-yy}", datas[1])} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
                             break;
                         case 3: // Longo 
-                            Console.WriteLine($"(RFC1) - {datas[2].ToLongDateString()} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
+                            Console.WriteLine($"(RFC1) - {datas[1].ToLongDateString()} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
                             break;
                         case 4: // Longo Personalizado
-                            Console.WriteLine($"(RFC1) - {string.Format("{0:dd-MM-yyyy hh:mm:ss}", datas[2])} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
+                            Console.WriteLine($"(RFC1) - {string.Format("{0:dd-MM-yyyy hh:mm:ss}", datas[1])} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
                             break;
                         case 5: // Padrao RFC1123
-                            Console.WriteLine($"(RFC1) - {string.Format("{0:r}", datas[2])} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
+                            Console.WriteLine($"(RFC1) - {string.Format("{0:r}", datas[1])} Em 17 de abril de 1969 foi feita a publicação da RFC1, por esse motivo considera-se esse o dia da internet até hoje.");
                             break;
                         default:
                             break;
@@ -141,19 +160,24 @@ namespace Datas.Dominio
                     switch (formatoData)
                     {
                         case 1: // Padrao Sistema
-                            Console.WriteLine($"(Alan Turing) - {datas[3].ToString()} Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
+                            Console.Write($"(Alan Turing) - {datas[2].ToString()}");
+                            Console.WriteLine(" Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
                             break;
                         case 2: // Simples
-                            Console.WriteLine($"(Alan Turing) - {string.Format("{0:dd-MM-yy}", datas[3])} Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
+                            Console.Write($"(Alan Turing) - {string.Format("{0:dd-MM-yy}", datas[2])}");
+                            Console.WriteLine(" Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
                             break;
                         case 3: // Longo 
-                            Console.WriteLine($"(Alan Turing) - {datas[3].ToLongDateString()} Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
+                            Console.Write($"(Alan Turing) - {datas[2].ToLongDateString()}");
+                            Console.WriteLine(" Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
                             break;
                         case 4: // Longo Personalizado
-                            Console.WriteLine($"(Alan Turing) - {string.Format("{0:dd-MM-yyyy hh:mm:ss}", datas[3])} Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
+                            Console.WriteLine($"(Alan Turing) - {string.Format("{0:dd-MM-yyyy hh:mm:ss}", datas[2])}");
+                            Console.WriteLine(" Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
                             break;
                         case 5: // Padrao RFC1123
-                            Console.WriteLine($"(Alan Turing) - {string.Format("{0:r}", datas[3])} Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
+                            Console.Write($"(Alan Turing) - {string.Format("{0:r}", datas[2])}");
+                            Console.WriteLine(" Nascimento de Alan Turing, matemático e criptoanalista britânico que é considerado o \"pai da informática\" por ter sido essencial na criação de máquinas que, mais tarde, dariam origem aos PCs que utilizamos hoje para trabalhar, estudar e realizar nossas atividades diárias. Sua genialidade e influência fundamental na história da humanidade, entretanto, foram ceifadas pelo preconceito de uma época que, felizmente, já ficou para trás.");
                             break;
                         default:
                             break;
