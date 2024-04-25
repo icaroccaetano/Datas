@@ -1,7 +1,9 @@
-# Formatador de Data
-Faz a formatação de data
+# Date Formatter
 
-## Sobre
-Esse projeto tem como intencão formatar a maneira que a data será impressa, trazendo 5 opções diferentes de formatação e 3 exemplos baseados em datas importantes para computação.
+Do the date formatting
 
-Projeto retirado do repositório de introduução a C# -> https://github.com/Wurthma/CSharp-Iniciantes
+## About
+
+This project intends to format the way the date will be printed, bringing 5 different formatting options and 3 examples based on important dates for computing.
+
+Project from the C# introduction repository -> https://github.com/Wurthma/CSharp-Beginners
